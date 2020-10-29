@@ -239,6 +239,12 @@ export const NetPrinter = {
       );
     }
   },
+  
+  printRaw: (text: string): void => {
+     RNNetPrinter.printRawData(text, (error: Error) =>
+        console.warn(error)
+      );
+  },
 
   printBill: (text: string, opts = {}): void => {
     if (Platform.OS === "ios") {
