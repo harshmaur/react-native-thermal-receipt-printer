@@ -43,5 +43,6 @@
   },
   "author": "diandanbao",
   "homepage": "https://github.com/HeligPfleigh/react-native-thermal-receipt-printer#readme",
-  "license": "ISC"
+  "license": "ISC",
+  "private": true
 }

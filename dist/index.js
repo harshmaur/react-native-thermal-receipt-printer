@@ -169,6 +169,11 @@ export var NetPrinter = {
             });
         }
     },
+    printRaw: function (text) {
+        RNNetPrinter.printRawData(text, function (error) {
+            return console.warn(error);
+        });
+    },
     printBill: function (text, opts) {
         if (opts === void 0) { opts = {}; }
         if (Platform.OS === "ios") {

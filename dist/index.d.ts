@@ -41,6 +41,7 @@ export declare const NetPrinter: {
     connectPrinter: (host: string, port: string) => Promise<INetPrinter>;
     closeConn: () => Promise<void>;
     printText: (text: string, opts?: {}) => void;
+    printRaw: (text: string) => void;
     printBill: (text: string, opts?: {}) => void;
 };
 export declare const NetPrinterEventEmitter: NativeEventEmitter;
